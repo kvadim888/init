@@ -1,0 +1,16 @@
+$ traceroute slash16.org
+traceroute: Warning: slash16.org has multiple addresses; using 52.84.197.10
+traceroute to slash16.org (52.84.197.10), 64 hops max, 52 byte packets
+ 1  178.214.196.33 (178.214.196.33)  0.837 ms  0.497 ms  0.457 ms
+ 2  v34.sh2.kv.wnet.ua (217.20.183.34)  0.483 ms  0.501 ms  0.422 ms
+ 3  ae1.hostlviv.lv.wnet.ua (217.20.162.25)  7.921 ms  7.183 ms  7.105 ms
+ 4  amazon.plix.pl (195.182.218.5)  13.471 ms  13.236 ms  13.174 ms
+ 5  52.93.18.86 (52.93.18.86)  14.771 ms
+    52.93.18.70 (52.93.18.70)  19.383 ms
+    52.93.18.102 (52.93.18.102)  23.711 ms
+ 6  52.93.18.175 (52.93.18.175)  14.513 ms
+    52.93.18.167 (52.93.18.167)  13.651 ms
+    52.93.18.163 (52.93.18.163)  13.718 ms
+    
+IP address of the device that makes the link between local network and
+the outside world: 178.214.196.33

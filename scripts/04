@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -e /etc/cron_hash.md5 ]; then
+	m1=$(cat /etc/cron_hash.md5 | awk '{print $1}')
+	m2=$(md5sum /etc/crontab)
+	if [ "$m1" != "$m2" ] ; then
+		echo "Cron rules have been modified today. Please, check /etc/crontab file"\
+		| mail -s "/etc/crontab has been modified" root
+		exit 1
+	fi
+else
+	md5sum /etc/crontab > /etc/cron_hash.md5
+fi

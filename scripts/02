@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo 'apt-get update && apt-get upgrade >> /var/log/update_script.log' > update.sh
+sudo mv update.sh /etc/cron.daily
+echo "0 4 * * 1 root /etc/cron.daily/update.sh" | crontab
+crontab -l

@@ -1,0 +1,12 @@
+First of all, I find out IP address of slash16.org:
+
+ $ host slash16.org | grep 'address' | awk '{print $NF}'
+52.84.197.107	
+52.84.197.41
+52.84.197.10
+52.84.197.139
+
+Next, I find the name of provider by using command "whois":
+
+ $ whois 52.84.197.41 | grep 'OrgName:'
+OrgName: Amazon Technologies Inc.

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -e "$1" ]; then
+	if [ -d "$1" ]; then
+		ls -lphS "$1" | grep -v '/'
+	else
+		echo "No such directory\n"
+	fi
+else
+	echo "No such file or directory\n"
+fi
